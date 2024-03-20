@@ -10,7 +10,7 @@ html{
 	background-size: cover;
 	animation-name: welcome;
 	animation-iteration-count: infinite;
-	animation-duration: 8s;
+	animation-duration: 14s;
 	animation-timing-function: linear;
   }
   @keyframes welcome{
