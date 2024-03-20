@@ -4,10 +4,6 @@ html{
 	scroll-behavior: smooth;
 	min-height: 100vh;
   }
-  body{
-	background-color: white;
-	color: white;
-  }
   .wel{
 	background-image: url('bg_image1.jpg'); 
 	background-repeat: no-repeat; 
