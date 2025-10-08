@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page | Blog Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7a4b62b0a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.4rem;
+}
+ul {
+  list-style: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+nav {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li {
+  font-size: 1.8rem;
+}
+nav ul li:hover {
+  border-bottom: rgb(255, 251, 0) 2px solid;
+}
+nav i {
+  font-size: 2.5rem;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Hero Section */
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero_content h1 {
+  font-size: 6rem;
+  line-height: 1.2;
+}
+.hero_content h4 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.hero_image img {
+  border-radius: 5rem;
+}
+
+/* Long Card Section */
+
+.h-card {
+  display: flex;
+  margin: 2rem 1rem;
+  box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.status {
+  display: flex;
+  justify-content: space-between;
+}
+.read-btn {
+  all: unset;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+}
+.read-btn:hover {
+  border-bottom: 1px solid #ccc;
+}
+
+/* v-cards */
+
+.v-card {
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 320px;
+  box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card_container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.card_wrapper {
+  display: flex;
+  justify-content: center;
+}
+.v-card img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer ul {
+  display: flex;
+  gap: 2rem;
+}
+footer ul li {
+  font-size: 1.8rem;
+}
+
+/* Post page */
+.banner_image img {
+  width: 100%;
+}
+.post h1 {
+  font-size: 3rem;
+}
+.post hr {
+  margin: 3rem 0;
+}
+.about-author {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+  </style>
+  <body>
+    <header>
+      <nav>
+        <h1>Great Zone</h1>
+        <ul>
+          <a href="home.html">
+            <li>Home</li>
+          </a>
+          <li>Posts</li>
+          <li>
+            <i class="fa fa-instagram"></i>
+          </li>
+          <li>
+            <i class="fa fa-twitter"></i>
+          </li>
+          <li>
+            <i class="fab fa-linkedin"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="hero_content">
+          <h1>Make Zone Better !</h1>
+          <h4>Why Better Zone Important ?</h4>
+        </div>
+        <div class="hero_image">
+          <img src="hero.png" alt="hero" />
+        </div>
+      </section>
+      <div class="h-card">
+        <div class="card_content">
+          <h2>long established</h2>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that....
+          </p>
+          <div class="status">
+            <p>8 Feb 2022</p>
+            <a href="post.html"><button class="read-btn">Read More</button></a>
+          </div>
+        </div>
+        <img src="long-card.png" alt="laptop guy" />
+      </div>
+
+      <div class="card_container">
+        <div class="card_wrapper">
+          <div class="v-card">
+            <div class="card_content">
+              <h2>long established</h2>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that....
+              </p>
+              <div class="status">
+                <p>8 Feb 2022</p>
+                <a href="post.html"
+                  ><button class="read-btn">Read More</button></a
+                >
+              </div>
+            </div>
+            <img src="images/card1.png" alt="laptop guy" />
+          </div>
+        </div>
+        <div class="card_wrapper">
+          <div class="v-card">
+            <div class="card_content">
+              <h2>long established</h2>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that....
+              </p>
+              <div class="status">
+                <p>8 Feb 2022</p>
+                <a href="post.html"
+                  ><button class="read-btn">Read More</button></a
+                >
+              </div>
+            </div>
+            <img src="images/card2.png" alt="laptop guy" />
+          </div>
+        </div>
+        <div class="card_wrapper">
+          <div class="v-card">
+            <div class="card_content">
+              <h2>long established</h2>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that....
+              </p>
+              <div class="status">
+                <p>8 Feb 2022</p>
+                <a href="post.html"
+                  ><button class="read-btn">Read More</button></a
+                >
+              </div>
+            </div>
+            <img src="images/card2.png" alt="laptop guy" />
+          </div>
+        </div>
+      </div>
+      <div class="h-card">
+        <div class="card_content">
+          <h2>What is Lorem Ipsum?</h2>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that....
+          </p>
+          <div class="status">
+            <p>8 Feb 2022</p>
+            <a href="post.html"><button class="read-btn">Read More</button></a>
+          </div>
+        </div>
+        <img src="images/long-big-card.png" alt="laptop guy" />
+      </div>
+    </main>
+    <hr />
+    <footer>
+      <p>GreatZone 2022 copyright all rights reserved</p>
+
+      <ul>
+        <li>
+          <i class="fa fa-instagram"></i>
+        </li>
+        <li>
+          <i class="fa fa-twitter"></i>
+        </li>
+        <li>
+          <i class="fab fa-linkedin"></i>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

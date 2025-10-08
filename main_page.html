@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUCHI</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="suci.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="main_css.css">
+    <link rel="stylesheet" href="major_css.css">
+    <link rel="shortcut icon" href="girl_login_image.png" type="image/x-icon">
+</head>
+
+<body
+    style="background-image: url('https://th.bing.com/th/id/OIP.-JU7ggvgCT1VLnClQIYiwQHaEY?rs=1&pid=ImgDetMain');
+    background-repeat: no-repeat; background-size: cover;">
+    <div class="wrapper">
+        <!-- sidebar starts from here -->
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-menu"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="welcome_page.html">SUCHI</a>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#prof" aria-expanded="false" aria-controls="prof">
+                        <i class="lni lni-user"></i>
+                        <span>Profile</span>
+                    </a>
+                    <ul id="prof" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="pricing_page.html" class="sidebar-link">Manage Account</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="welcome_page.html" class="sidebar-link">
+                                <i class="lni lni-exit"></i>
+                                <span class="text-white ">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#kast" class="sidebar-link">
+                        <i class="lni lni-agenda"></i>
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tant" class="sidebar-link">
+                        <i class="lni lni-star-fill"></i>
+                        <span>Important</span>
+                    </a>
+                </li>
+                <!-- already created items end over here in sidebar -->
+                <hr>
+                <li class="sidebar-item">
+                    <a href="#yadd" class="sidebar-link">
+                        <i class="lni lni-direction"></i>
+                        <span>My day</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- new list adding button starts from here -->
+            <div class="sidebar-footer">
+                <li class="sidebar-item">
+                    <a href="pricing_page.html" class="sidebar-link">
+                        <i class="lni lni-plus"></i>
+                        <span class="pb-1 btn text-white border-0 pb-2 ">New list</span>
+                    </a>
+                </li>
+            </div>
+        </aside>
+        <!-- sidebar ends over here -->
+        <div class="main">
+            <!-- center content right starts from here -->
+            <div>
+
+            </div>
+            <!-- sidebar -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+                crossorigin="anonymous"></script>
+            <!-- javascript starts from here for sidebar -->
+            <script>
+                const hamBurger = document.querySelector(".toggle-btn");
+                hamBurger.addEventListener("click", function () {
+                    document.querySelector("#sidebar").classList.toggle("expand");
+                });
+            </script>
+            <script src="suci.js"></script>
+
+            <!-- tasks section starts from here -->
+
+            <div id="kast" style="background-image: url('important_wallapper.png');
+            background-repeat: no-repeat; background-size: cover; height: 100%;">
+                <header>
+                    <h1 class="text-white ">Tasks</h1>
+                    <form id="new-task-form">
+                        <input type="text" name="new-task-input" id="new-task-input"
+                            placeholder="What do you have planned?" />
+                        <input type="submit" id="new-task-submit" value="Add task" />
+                    </form>
+                </header>
+                <main>
+                    <div class="task-list">
+                        <div id="tasks">
+
+                            <!-- <div class="task">
+                        <div class="content">
+                            <input 
+                                type="text" 
+                                class="text" 
+                                value="A new task"
+                                readonly>
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div> -->
+
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <!-- important -->
+            <div id="tant" style="background-image: url('tasks_wallpaper.png');
+            background-repeat: no-repeat; background-size: cover; height: 100%;">
+                <header>
+                    <h1 class="text-white ">Important</h1>
+                    <form id="new-task-form">
+                        <input type="text" name="new-task-input" id="new-task-input"
+                            placeholder="What do you have planned?" />
+                        <input type="submit" id="new-task-submit" value="Add task" />
+                    </form>
+                </header>
+                <main>
+                    <div class="task-list">
+                        <div id="tasks">
+
+                            <!-- <div class="task">
+                        <div class="content">
+                            <input 
+                                type="text" 
+                                class="text" 
+                                value="A new task"
+                                readonly>
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div> -->
+
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <!-- user defined -->
+            <div id="yadd" style="background-image: url('myday_wallpaper.png');
+            background-repeat: no-repeat; background-size: cover; height: 100%;">
+                <header>
+                    <h1 class="text-white ">My Day</h1>
+                    <form id="new-task-form">
+                        <input type="text" name="new-task-input" id="new-task-input"
+                            placeholder="What do you have planned?" />
+                        <input type="submit" id="new-task-submit" value="Add task" />
+                    </form>
+                </header>
+                <main>
+                    <div class="task-list">
+                        <div id="tasks">
+
+                            <!-- <div class="task">
+                        <div class="content">
+                            <input 
+                                type="text" 
+                                class="text" 
+                                value="A new task"
+                                readonly>
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div> -->
+
+                        </div>
+                    </div>
+                </main>
+            </div>
+</body>
+
+</html>
