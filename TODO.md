@@ -1,4 +1,5 @@
-- [x] Update main_page.html: Modify task lists to use Bootstrap cards for better structure, add icons to buttons, and enhance form styling.
-- [x] Update css/suci.css: Improve button visibility with Bootstrap classes, add hover effects, and ensure responsive design.
-- [x] Test the updated UI: Verify add, edit, delete, and complete functionalities work correctly across sections.
-- [x] Verify responsiveness: Check on mobile and desktop views.
+- [x] Update navigation in pricing_page.html to match index.html (simple brand link)
+- [x] Apply 'wel' class to body in pricing_page.html
+- [x] Simplify pricing cards in pricing_page.html: remove gradients, make clean white/light cards
+- [x] Update CSS in major_css.css: remove gradient and animation styles for .carrd, keep simple
+- [x] Test responsiveness and ensure minimalist look

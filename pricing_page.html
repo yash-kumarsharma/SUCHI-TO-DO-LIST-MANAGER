@@ -11,68 +11,74 @@
     <link rel="stylesheet" href="suci.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="major_css.css">
+    <link rel="stylesheet" href="css/major_css.css">
 </head>
-<style>
-    .carrd{
-        transition: 0.8s;
-    }
-    .carrd:hover{
-        transform: scale(1.1);
-    }
-</style>
-<body style="background-color: white;">
+<body class="wel">
     <!-- navigation panel starts from here -->
     <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
             <ul class="nav">
-                <li class="nav-item navbar-brand"><a href="index.html" class="nav-link text-black ">&copy;SUCHI</a></li>
+                <li class="nav-item navbar-brand"><a href="index.html" class="nav-link text-white ">&copy;SUCHI</a></li>
+            </ul>
+            <ul class="nav nav-underline justify-content-end">
+                <li class="nav-item mx-3"><a href="#aboutus" class="nav-link text-white">About</a></li>
+                <li class="nav-item mx-3"><a href="signup_page.html" class="nav-link text-white">Sign up</a></li>
+                <li class="nav-item mx-3"><a href="login_page.html" class="nav-link text-white">Sign in</a></li>
             </ul>
         </div>
     </nav>
-    <h1 class="text-center w-100 text-dark  " style="font-weight: 800; font-family: cursive;">Our Plans</h1>
     <!-- navbar ends over here -->
-    <div class="text-center container-fluid p-5 ">
-        <div class="row mx-auto ">
-            <div class="col-sm-4">
-                <div class="card mx-auto p-3 border-2  carrd shadow-lg " style="width:400px">
-                    <i class="lni lni-gift"></i><br>
-                    <h4>Basic</h4>
-                    <h2>$9.00</h2>per month <hr>
-                    <div class="card-body">
-                      <p class="card-text">New list/tags creating option</p>
-                      <p class="card-text">Collaborate upto 2 people</p>
-                      <p class="card-text">Personalized profile customization</p>
-                      <p class="card-text">Add description to tasks</p>
-                      <a href="#" class="btn btn-outline-primary  rounded-pill w-100 ">Buy</a>
+    <div class="container text-center">
+        <h1 class="h1 text-center text-white" style="font-size: 78px;">Our Plans</h1>
+    </div>
+    <br>
+    <div class="container-fluid p-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-4 mb-4">
+                <div class="card mx-auto shadow-lg" style="width: 100%; max-width: 400px;">
+                    <div class="card-body text-center">
+                        <i class="lni lni-gift" style="font-size: 3rem; color: #007bff;"></i><br>
+                        <h4 class="card-title">Basic</h4>
+                        <h2 class="card-subtitle mb-2 text-muted">$9.00</h2>
+                        <p class="text-muted">per month</p>
+                        <hr>
+                        <p class="card-text">New list/tags creating option</p>
+                        <p class="card-text">Collaborate upto 2 people</p>
+                        <p class="card-text">Personalized profile customization</p>
+                        <p class="card-text">Add description to tasks</p>
+                        <a href="#" class="btn btn-primary rounded-pill w-100">Buy</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card mx-auto p-3 m-auto border-2  carrd shadow-lg " style="width:400px">
-                    <i class="lni lni-diamond-alt"></i><br>
-                    <h4>Super</h4>
-                    <h2>$19.00</h2>per month <hr>
-                    <div class="card-body">
-                      <p class="card-text">All basic perks</p>
-                      <p class="card-text">Set priorities for tasks</p>
-                      <p class="card-text">Collaborate upto 6 people</p>
-                      <p class="card-text">Get access to search tasks feature</p>
-                      <a href="#" class="btn btn-outline-success  rounded-pill w-100 ">Buy</a>
+            <div class="col-sm-4 mb-4">
+                <div class="card mx-auto shadow-lg" style="width: 100%; max-width: 400px;">
+                    <div class="card-body text-center">
+                        <i class="lni lni-diamond-alt" style="font-size: 3rem; color: #28a745;"></i><br>
+                        <h4 class="card-title">Super</h4>
+                        <h2 class="card-subtitle mb-2 text-muted">$19.00</h2>
+                        <p class="text-muted">per month</p>
+                        <hr>
+                        <p class="card-text">All basic perks</p>
+                        <p class="card-text">Set priorities for tasks</p>
+                        <p class="card-text">Collaborate upto 6 people</p>
+                        <p class="card-text">Get access to search tasks feature</p>
+                        <a href="#" class="btn btn-success rounded-pill w-100">Buy</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card mx-auto p-3 border-2  carrd shadow-lg " style="width:400px">
-                    <i class="lni lni-crown"></i><br>
-                    <h4>Pro</h4>
-                    <h2>$29.00</h2>per month <hr>
-                    <div class="card-body">
-                      <p class="card-text">All super perks</p>
-                      <p class="card-text">Access to progress tarcking features</p>
-                      <p class="card-text">Export lists or task to the external devices</p>
-                      <p class="card-text">Access to other exclusive features</p>
-                      <a href="#" class="btn btn-outline-warning  rounded-pill w-100 ">Buy</a>
+            <div class="col-sm-4 mb-4">
+                <div class="card mx-auto shadow-lg" style="width: 100%; max-width: 400px;">
+                    <div class="card-body text-center">
+                        <i class="lni lni-crown" style="font-size: 3rem; color: #ffc107;"></i><br>
+                        <h4 class="card-title">Pro</h4>
+                        <h2 class="card-subtitle mb-2 text-muted">$29.00</h2>
+                        <p class="text-muted">per month</p>
+                        <hr>
+                        <p class="card-text">All super perks</p>
+                        <p class="card-text">Access to progress tracking features</p>
+                        <p class="card-text">Export lists or task to the external devices</p>
+                        <p class="card-text">Access to other exclusive features</p>
+                        <a href="#" class="btn btn-warning rounded-pill w-100">Buy</a>
                     </div>
                 </div>
             </div>
