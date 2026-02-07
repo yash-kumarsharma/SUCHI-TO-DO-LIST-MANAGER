@@ -46,7 +46,7 @@ Follow these steps to set up the project locally.
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/your-username/SUCHI.git](https://github.com/your-username/SUCHI.git)
+    git clone [https://github.com/yash-kumarsharma/SUCHI-TO-DO-LIST-MANAGER.git](https://github.com/yash-kumarsharma/SUCHI-TO-DO-LIST-MANAGER.git)
     ```
 
 2.  **Navigate into the project folder**
