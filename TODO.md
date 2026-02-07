@@ -1,2 +1,0 @@
-- [ ] Fix background image paths in css/major_css.css to use correct relative paths
-- [ ] Fix marquee image paths in index.html to point to images/ folder
