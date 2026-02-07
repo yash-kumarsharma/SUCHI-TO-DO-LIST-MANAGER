@@ -1,2 +1,4 @@
-- [ ] Fix background image paths in css/major_css.css to use correct relative paths
-- [ ] Fix marquee image paths in index.html to point to images/ folder
+- [x] Update main_page.html: Modify task lists to use Bootstrap cards for better structure, add icons to buttons, and enhance form styling.
+- [x] Update css/suci.css: Improve button visibility with Bootstrap classes, add hover effects, and ensure responsive design.
+- [x] Test the updated UI: Verify add, edit, delete, and complete functionalities work correctly across sections.
+- [x] Verify responsiveness: Check on mobile and desktop views.

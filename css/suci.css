@@ -161,7 +161,8 @@ main {
 }
 
 .task.completed {
-	background-color: #f0f0f0;
+	background-color: rgba(0, 123, 255, 0.1);
+	border-left: 4px solid #007bff;
 }
 
 .task-list {

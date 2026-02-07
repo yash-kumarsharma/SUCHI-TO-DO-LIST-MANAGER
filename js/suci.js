@@ -29,16 +29,21 @@ function saveTasks(section) {
 
 function createTaskElement(taskText, completed = false, section, list_el, dueDate = null) {
     const task_el = document.createElement('div');
-    task_el.classList.add('task');
+    task_el.classList.add('card', 'mb-2', 'task');
     if (completed) task_el.classList.add('completed');
 
-    const task_content_el = document.createElement('div');
-    task_content_el.classList.add('content');
+    const task_body_el = document.createElement('div');
+    task_body_el.classList.add('card-body', 'd-flex', 'justify-content-between', 'align-items-center');
 
-    task_el.appendChild(task_content_el);
+    task_el.appendChild(task_body_el);
+
+    const task_content_el = document.createElement('div');
+    task_content_el.classList.add('content', 'flex-grow-1');
+
+    task_body_el.appendChild(task_content_el);
 
     const task_input_el = document.createElement('input');
-    task_input_el.classList.add('text');
+    task_input_el.classList.add('text', 'form-control-plaintext');
     task_input_el.type = 'text';
     task_input_el.value = taskText;
     task_input_el.setAttribute('readonly', 'readonly');
@@ -47,26 +52,26 @@ function createTaskElement(taskText, completed = false, section, list_el, dueDat
 
     if (dueDate) {
         const due_date_el = document.createElement('div');
-        due_date_el.classList.add('due-date');
+        due_date_el.classList.add('due-date', 'text-muted', 'small');
         due_date_el.innerText = `Due: ${new Date(dueDate).toLocaleDateString()}`;
         task_content_el.appendChild(due_date_el);
     }
 
     const task_actions_el = document.createElement('div');
-    task_actions_el.classList.add('actions');
+    task_actions_el.classList.add('actions', 'd-flex', 'gap-2');
 
     const task_edit_el = document.createElement('button');
-    task_edit_el.classList.add('edit');
-    task_edit_el.innerText = 'Edit';
+    task_edit_el.classList.add('edit', 'btn', 'btn-primary', 'btn-sm');
+    task_edit_el.innerHTML = '<i class="fas fa-edit"></i> Edit';
 
     const task_delete_el = document.createElement('button');
-    task_delete_el.classList.add('delete');
-    task_delete_el.innerText = 'Delete';
+    task_delete_el.classList.add('delete', 'btn', 'btn-dark', 'btn-sm', 'text-white');
+    task_delete_el.innerHTML = '<i class="fas fa-trash"></i> Delete';
 
     task_actions_el.appendChild(task_edit_el);
     task_actions_el.appendChild(task_delete_el);
 
-    task_el.appendChild(task_actions_el);
+    task_body_el.appendChild(task_actions_el);
 
     list_el.appendChild(task_el);
 

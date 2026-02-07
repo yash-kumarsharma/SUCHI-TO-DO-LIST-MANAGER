@@ -8,7 +8,7 @@ html{
 	height: 100%;
   }
   .wel{
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	background-image: url('../bg_image1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;

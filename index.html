@@ -17,6 +17,40 @@
     #darc:hover{
         transform: scale(1.1);
     }
+    .image-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-track {
+  display: flex;
+  width: max-content;
+  animation: scrollImages 25s linear infinite;
+}
+
+.image-track img {
+  height: 250px;
+  margin-right: 40px;
+  transition: transform 0.3s;
+}
+
+.image-track img:hover {
+  transform: scale(1.05);
+}
+
+/* Pause on hover */
+.image-slider:hover .image-track {
+  animation-play-state: paused;
+}
+
+@keyframes scrollImages {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 </style>
 <body class="wel">
     <div>
@@ -70,64 +104,23 @@
         </div>
        </div>
    </div>
-   <div class="wel d-inline ">
-    <marquee behavior="sliding" direction="left" scrollamount="9" loop="100" class="align-content-center ">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-        <img src="myday.png" class="img-fluid" style="height: 250px;">
-        <img src="tasks.png" class="img-fluid" style="height: 250px;">
-        <img src="important.png" class="img-fluid" style="height: 250px;">
-    </marquee>
-   </div>
+   <div class="wel py-4">
+
+  <div class="image-slider">
+    <div class="image-track">
+
+      <!-- Repeat images twice for seamless loop -->
+      <img src="images/myday.png">
+      <img src="images/tasks.png">
+      <img src="images/important.png">
+      <img src="images/myday.png">
+      <img src="images/tasks.png">
+      <img src="images/important.png">
+
+    </div>
+  </div>
+
+</div>
     <!-- carousel ends over here -->
     <div style="background-color: rgb(246, 246, 246);">
         <div class="container">
