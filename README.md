@@ -12,7 +12,7 @@
 
 **SUCHI** is a modern and minimal task management web application designed to help users organize tasks, create lists and tags, and stay productive with a clean, customizable interface.
 
-[View Demo](#) · [Report Bug](#) · [Request Feature](#)
+[![Live Demo](https://img.shields.io/badge/demo-online-green?style=for-the-badge&logo=appveyor)](https://your-username.github.io/SUCHI/)
 
 </div>
 
