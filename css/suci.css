@@ -154,3 +154,38 @@ main {
 .task .actions .delete {
 	color: crimson;
 }
+
+.task.completed .text {
+	text-decoration: line-through;
+	opacity: 0.6;
+}
+
+.task.completed {
+	background-color: #f0f0f0;
+}
+
+.task-list {
+	max-height: 60vh;
+	overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+	header h1 {
+		font-size: 1.5rem;
+	}
+
+	#new-task-input {
+		font-size: 1rem;
+		padding: 0.75rem;
+	}
+
+	.task .actions {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.task .actions button {
+		font-size: 0.875rem;
+		padding: 0.5rem;
+	}
+}
