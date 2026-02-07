@@ -4,9 +4,13 @@ html{
 	scroll-behavior: smooth;
 	min-height: 100vh;
   }
+  body{
+	height: 100%;
+  }
   .wel{
-	background-image: url('bg_image1.jpg'); 
-	background-repeat: no-repeat; 
+	min-height: 100vh;
+	background-image: url('../bg_image1.jpg');
+	background-repeat: no-repeat;
 	background-size: cover;
 	animation-name: welcome;
 	animation-iteration-count: infinite;
@@ -14,9 +18,9 @@ html{
 	animation-timing-function: linear;
   }
   @keyframes welcome{
-	0% {background-image: url('bg_image1.jpg');}
-	50% {background-image: url('bg_image2.jpg');}
-	100% {background-image: url('bg_image1.jpg');}
+	0% {background-image: url('../bg_image1.jpg');}
+	50% {background-image: url('../bg_image2.jpg');}
+	100% {background-image: url('../bg_image1.jpg');}
   }
   .mar {
 	width: 100%;
